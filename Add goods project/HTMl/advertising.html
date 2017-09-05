@@ -1,0 +1,94 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+        <title> bestPrice website </title>
+
+        <link rel="stylesheet" type="text/css" href="../Bootstrap%20&%20FontAwesom/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="../Bootstrap%20&%20FontAwesom/css/font-awesome.min.css"/>
+        <script src="../Bootstrap%20&%20FontAwesom/js/html5shiv.min.js"> </script>
+        <script src="../Bootstrap%20&%20FontAwesom/js/respond.min.js"> </script>
+        <link rel="stylesheet" type="text/css" href="../CSS/advertising.css">
+
+    </head>
+    <body>
+
+
+        <!------------------------------------------- advertising at the sides ----------------------------------------------------->
+
+        <div class="advert"> 
+            <aside class="right" id="right">
+            </aside>
+            <aside class="left" id="left">
+            </aside>
+            <div class="container">
+            </div>
+        </div>
+        <!------------------------------------------- advertising at the sides ----------------------------------------------------->
+        <div id="products">
+            <button id="addButton" class="btn btn-danger addButton " >Add Object</button>
+            <div id="media" class="media">
+                <div class="media-left media-middle">
+                    <img class="media-object mediaPhoto" src="../Images/1.jpg" alt="...">
+                </div>
+                <div class="media-body">
+
+                    <h3 class="media-heading mediaHead">Middle aligned media</h3>
+                    <p class="mediaDescription">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                    <p class="mediaDescription">price : 200$</p><p class="mediaDescription" >from : carefour</p> <p class="mediaDescription">date : 21/21/2001</p><p class="mediaDescription">edited by : mohamed-elmaghraby</p>
+
+                    <button id="buttonLike" class="like btn btn-danger">Like <span id="spanButtonLike" class="badge"> 0 </span></button>
+                    <button id="buttondisLike" class="like btn btn-primary">DisLike <span id="spanButtondisLike" class="badge"> 0 </span></button>
+
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------addproduct--------------------------------------------------------------->
+
+        <div id="addobject" class="container addobject" style="display:none;">
+            <form id="thisIsTheForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">  
+                <div class="row">
+                </div>
+                <div class="row">
+                    <label class="col-xs-3 col-xs-push-3 label">product name:</label>
+                    <input id="1"  class=" col-xs-push-3 col-xs-3 objectText" type="text" name="productname">
+                </div>
+                <div class="row">
+                    <label class="col-xs-3 col-xs-push-3 label">place you bought from:</label>
+                    <input id="2" class="col-xs-3 col-xs-push-3 objectPlace" type="text" name="from">
+                </div>   
+
+                <div class="row">
+                    <label class="col-xs-3 col-xs-push-3 label">product price :</label>
+                    <input id="3" class="col-xs-3 col-xs-push-3 objectPrice" type="number" min="0" name="price">
+                </div>
+                <div class="row">
+                    <label class="col-xs-3 col-xs-push-3 label">date</label>
+                    <input id="4" class="col-xs-3 col-xs-push-3 objectDate" type="date" name="date">
+                </div>
+                <div class="row">
+                    <label class="col-xs-3 col-xs-push-3 label" >upload product photo:</label>
+                    <button class="col-xs-3 col-xs-push-3 objectPhoto btn btn-success" onclick="document.getElementById('file').click(); return false;"> Up load</button>
+
+                    <input id="file" id="5" onchange="readURL(this);" class="col-xs-3 col-xs-push-3 objectPhoto" style="visibility:hidden;" type="file" accept="image/*" name= "image" >
+                </div>
+                <div class="row">
+                    <label class="col-xs-3 col-xs-push-3 label">write a description:</label>
+                    <textarea id="6" class="col-xs-3 col-xs-push-3 objectDescription" name="description"> </textarea>
+                </div> 
+                <input class="btn btn-danger addButton " id="pushObject" name="submit" value="push Object">
+            </form>
+        </div>
+
+
+        <!---------------------------------------------------------addproduct------------------------------------------------------>
+
+        <script src="../Bootstrap%20&%20FontAwesom/js/jquery-3.1.0.min.js"> </script>
+        <script src="../Bootstrap%20&%20FontAwesom/js/bootstrap.min.js"> </script> 
+        <script src="../JS/advertising.js"></script>
+
+    </body>
+</html>

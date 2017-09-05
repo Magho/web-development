@@ -1,0 +1,217 @@
+/**crimson-#2ecc71**/
+
+body{
+
+    background: url("../Images/advertise%20background.jpg")no-repeat center center fixed;
+    min-height: 450px;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+
+
+.right{
+
+    margin-top: 70px;
+    height: 320px;
+    position: fixed;
+    margin-left: 1%;
+    margin-right: 84% ;
+    width: 15%;
+    background-image: url(../Images/footer.jpg);
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    border: 4px groove #eee;
+    border-radius: 20%;
+}
+
+.left{
+
+    margin-top: 70px;
+    height: 320px;
+    position: fixed;
+    margin-right: 1%;
+    margin-left: 84% ;
+    width: 15%;
+    background-image: url(../Images/footer.jpg);
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    border: 4px groove #eee;
+    border-radius: 20%;
+}
+
+.right:hover {
+
+    cursor: pointer;
+}
+
+.left :hover {
+
+    cursor: pointer;
+}
+
+.addButton{
+
+    margin-left: 17%;
+    margin-right: 17%;
+    height: 45px;
+    width: 66%;
+    border-radius: 5%;
+    margin-top: 20px;
+}
+.comment {
+
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    color: firebrick;
+    overflow: hidden;
+    background-color: darkgray;
+}
+.opinions{
+    padding-top: 15px;
+}
+.commentparagraph{
+
+    height: 35px;
+    width: 450px;
+    border: 2px groove #2ecc71;
+    border-radius: 12%;
+}
+
+/*****************************************************adversting*******************************************/
+.media {
+
+    background: rgba(121, 103, 105, 0.78);
+    padding: 20px;
+    border:2px solid #626262;
+    border-radius: 20%;
+    margin-bottom: 35px;
+    padding-top: 50px;
+    width: 66%;
+    margin-left: 17%;
+    margin-right: 17%;    
+}
+
+.mediaHead{
+
+    font-family: cursive;
+    text-align: center;
+    color:#2ecc71;
+}
+
+.mediaDescription{
+
+    text-align: center;
+    font-family: cursive;
+    color: white;
+}
+.mediaPhoto{
+    padding-top: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+    border: 2px groove crimson;
+}
+
+.like{
+
+    float: left;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+/**------------------------------------------------ rating  ------------------------------------------------------------------**/
+
+/**------------------------------------------------ rating  ------------------------------------------------------------------**/
+
+
+/**---------------------------------------addproduct---------------------------------------------------------------**/
+.addobject{
+
+    margin-top: 100px;
+}
+.objectText,.objectPlace,.objectPrice,.objectDate{
+
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 15%;
+    border:3px groove #2ecc71;
+}
+.objectPhoto{
+
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;    
+}
+.objectDescription{
+
+    height: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    border:3px groove #2ecc71;
+    border-radius: 15%;
+
+}
+
+.checkbox{
+
+
+}
+.label{
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 20px;
+}
+/**---------------------------------------addproduct---------------------------------------------------------------**/
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    color:#2ecc71;
+
+}
+section h2.section-heading {
+    font-size: 60px;
+
+
+}
+.timeline .timeline-heading h4{
+
+    color: crimson;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.text-muted{
+
+    color: blanchedalmond;
+}
+
+.timeline>li .timeline-image {
+
+    background-color: crimson;
+}
+
+section h3.section-subheading{
+
+    font-size: 25px;
+}
+
+.opacity1212{
+
+    background: rgba(30, 28, 27, 0.5);
+
+}
