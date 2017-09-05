@@ -1,0 +1,527 @@
+/*start maun rules*/
+*{box-sizing: border-box;}
+
+.container{	width: 1170px;margin: auto}
+
+.clearfix{ clear: both;}
+
+.center{text-align: center;}
+
+#up{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background:none;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%; 
+	cursor: pointer;
+	display: none;
+}
+/*end maun rules*/
+
+/* Start header*/
+
+.header .slider{
+
+	background-image: url("http://admusicfuel.com/wp-content/uploads/Music-Fuel-358-1700x600.jpg");
+	-webkit-background-size: cover;/**/
+	-moz-background-size: cover;/**/
+	-o-background-size: cover;/**/
+	height: 650px;
+	width: 100%;
+}
+
+.header .slider1{
+
+	background-image: url("data:image/jpeg;base64,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");
+	-webkit-background-size: cover;/**/
+	-moz-background-size: cover;/**/
+	-o-background-size: cover;/**/
+	height: 650px;
+	width: 100%;
+}
+
+.header .slider2{
+
+	background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaRoEKUoZ3NiUPbf-TZP5Rxo3v1hmdv2VGXnEy-FGLRyWcaWFMnA");
+	-webkit-background-size: cover;/**/
+	-moz-background-size: cover;/**/
+	-o-background-size: cover;/**/
+	height: 650px;
+	width: 100%;
+}
+
+.header .slider .time h3 , .header .slider1 .time h3 ,.header .slider2 .time h3 {
+
+		float: left;
+		padding-top: 28px;
+		padding-left: 700px;
+		 margin:0;
+		 font-size: 20px;
+		 color:#2ecc71;
+		 font-family: cursive;
+		 font-size: 30px;
+}
+.header .slider .login,.header .slider1 .login,.header .slider2 .login{ float: right;}
+.header .slider .login p, .header .slider1 .login p ,.header .slider2 .login p {float: left;padding-top: 8px;font-size: 20px}
+.header .slider .login input ,.header .slider1 .login input ,.header .slider2 .login input {background-color: #999;border-radius: 20%;height: 30px;}
+.header .slider .login button ,.header .slider1 .login button ,.header .slider2 .login button {margin-top:30px;background:none;border: none;cursor: pointer;}
+.header .slider .login button > i , .header .slider1 .login button > i  ,.header .slider2 .login button > i  {color: #2ecc71;height: 25px;width: 25px;}
+.header .slider .title ,.header .slider1 .title ,.header .slider2 .title{	color: #fff;text-align: center;	padding-top: 300px;}
+
+.header .slider .title h2, .header .slider1 .title h2, .header .slider2 .title h2{
+
+	margin: 0px;
+	font-family:arial;
+	font-size: 55px;
+	width: 500px;
+	color: #eee;
+	margin: auto;
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	padding: 10px 0px;
+}
+.header .slider .title p, .header .slider1 .title p, .header .slider2 .title p{
+
+	margin: auto;
+	margin-bottom: 30px;
+	font-family:cursive;
+	font-size: 25px;
+	font-weight: bold;
+	color: #2ecc71;
+	width: 500px;
+}
+.header .slider .title button, .header .slider1 .title button, .header .slider2 .title button {
+	
+	background: none;
+	font-size: 30px;
+	font-family: arial;
+	margin-top: 30px;
+	border:2px solid #fff;
+	color: #fff;
+	font-weight: bold;
+	padding:5px 25px;
+}
+
+.header .slider .title button:hover, .header .slider1 .title button:hover,.header .slider2 .title button:hover{	background-color: #2ecc71;	cursor: pointer;}
+
+.header .navbar {	background-color: #252F31;	color: #fff;overflow: hidden; }
+
+.header .navbar h2 { float: left;text-transform: uppercase;}
+
+.header .navbar h2 span{color: #2ecc71;}
+
+.header .navbar ul {list-style: none;text-decoration: none;	overflow: hidden;padding-left: 0px;	float:right;}
+
+.header .navbar ul li {	float:left;	padding: 10px;	padding-right: 20px;}
+
+.header .navbar ul li a{text-decoration: none;	color: #fff;font-family: cursive;}
+
+
+.header .navbar ul li a:hover,
+.header .navbar ul li.active a{	color: #30b567;	padding-right: 5px;	border-right: 2px solid #fff;}
+
+
+/* end navbar*/
+/*start features*/
+
+.features{
+
+	overflow: hidden;
+	padding-top:100px;
+	padding-bottom:100px;
+	height: 450px;
+}
+
+.features .feat{float: left;width:33.3333333333333% ;}
+
+.features .feat h2 {
+	
+	font-family:monospace;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.features .feat p{
+
+	line-height: 2;
+	color: #999;
+	padding: 10px;
+	text-align: justify;
+}
+
+.features .feat p.border{border-right: 3px solid #eee;}
+
+
+/*end features*/
+/*start about me*/
+
+.about-me{overflow: hidden;	background-color: #eee;}
+
+.about-me .image{	width: 40%;	float: left;height: 650px;}
+
+.about-me .image img{width: 100%;height: 100%;}
+
+.about-me .info{width: 60%;	float: left;}
+
+.about-me .info h2{
+	font-family: monospace;
+	font-size:30px;
+	margin-left: 25px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.about-me .info > p {
+	margin-left: 40px;
+	line-height: 1.8;
+	color: #999;
+	font-family: cursive;
+	margin-bottom: 10px;
+	height: 85px;
+}
+
+.about-me .info .Hobbies{ margin-left: 20px;}
+
+.about-me .info .Hobbies > div {float: left;width: 50%;	padding-left: 15px;	min-height: 100px;}
+
+.about-me .info .Hobbies > div > img { 
+
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-top: 9px;
+	color: #2dcc70;
+
+}
+.about-me .info .Hobbies {margin-bottom: 350px;}
+
+.about-me .info .Hobbies > div > h3 {
+	
+	float: left;
+	margin-left: 18px;
+	font-family:monospace;
+	font-size:18px;
+	font-weight: bold;
+	color: #2dcc70;
+}
+
+.about-me .info .Hobbies > div > p {
+	clear: both;
+	line-height: 1.8;
+	color: #999;
+	font-family: cursive;
+	height: 85px;
+}
+
+.about-me .info .Hobbies .border {border-right: 2px solid #999}
+
+
+/*end about me*/
+
+/*start Skills*/
+
+.Skills{
+
+	overflow: hidden;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+}
+
+.Skills .My-skills,.Skills .progress{float:left;	width: 50%;	height: 400px;}
+
+.Skills .My-skills{	border-right: 3px solid #eee;}
+
+.Skills .My-skills h2{
+
+	font-family: monospace;
+	font-size:30px;
+	margin-left: 25px;
+	margin-top: 30px;
+}
+
+.Skills .My-skills p {
+
+	margin-left: 27px;
+	line-height: 1.8;
+	color: #999;
+	font-family: cursive;
+	margin-bottom: 10px;
+	padding-right: 50px;
+
+}
+
+.Skills .My-skills p:nth-child(2){	margin-bottom: 40px}
+
+.Skills .My-skills .button{
+	
+	background-color: #fff;
+	font-size: 20px;
+	font-family: cursive;
+	margin-top: 30px;
+	margin-left: 24px;
+	border:2px solid #2dcc70;
+	color: #2dcc70;
+	padding:5px 25px; 
+}
+
+.Skills .My-skills  .button:hover{	background-color: #2ecc71;	cursor: pointer;	color: #fff;}
+
+.Skills .progress {	padding-left: 40px;}
+
+.Skills .progress .tech:nth-child(1) {	margin-bottom: 20px;	margin-top: 30px;}
+
+.Skills .progress .tech div{height: 30px;background-color:#999 ;border-radius: 12px;} 
+
+.Skills .progress .tech div div {height: 30px;background-color: #2dcc70 ;}
+
+.Skills .progress .tech div div p{
+
+	color:#fff;
+	margin-top:3px;
+	font-weight: bold;
+	font-size: 20px;
+	float: right;
+	margin-right: 20px;
+
+}
+
+/*end Skills*/
+
+/*start Resume*/
+
+.Resume{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f2f2f2;
+}
+.Resume h2{	font-family: arial;}
+
+.Resume p{	line-height: 1.8;	font-family: cursive;	color:#999 ;}
+
+.Resume button{
+	background-color: #fff;
+	font-size: 20px;
+	font-family: cursive;
+	margin-top: 30px;
+	margin-left: 24px;
+	border:2px solid #2dcc70;
+	color: #2dcc70;
+	padding:5px 25px; 
+}
+
+.Resume button:hover{	background-color: #2ecc71;	cursor: pointer;	color: #fff;}
+
+/*End ressume*/
+
+/*start education*/
+
+.Education{	overflow: hidden;	padding-top: 30px;	padding-bottom: 30px;}
+
+.Education .My-Education h2,.Education .exp p {	font-family: serif;	padding-left: 0px;	margin-left: 0px;}
+
+.Education .My-Education p{
+
+	line-height: 1.8;
+	font-family: cursive;
+	color:#999 ;
+	margin-left: 0px;
+}
+
+.Education .experience .exp hr{	width: 400px;}
+
+.Education .experience .exp p {
+	
+	line-height: 1.8;
+	font-family: cursive;
+	color:#999 ;
+	margin-left: 100px;
+}
+
+.Education .My-Education,.Education .experience {float:left;	width: 50%;	margin-top: 35px;}
+
+.Education .experience{	margin-bottom: 20px;	border-left: 2px solid #eee;}
+
+.Education .experience .exp div{
+	
+	background-color: #2ecc71;
+	font-size: 20px;
+	font-family: cursive;
+	margin-top: 2px;
+	margin-bottom: 5px;
+	border:2px solid #2dcc70;
+	color: #fff;
+	padding:5px 25px; 
+	display: inline-block;
+	border-radius: 15px;
+}
+.bottom h2{	margin-top: 70px;}
+
+.Education .experience .exp div:hover{	background-color: #fff;	color: #2ecc71;}
+
+.Education .experience .exp h2 {	margin-left: 100px;}
+
+.Education .experience .exp > div {		margin-left: 90px}
+
+/*end education*/
+
+/*start Resume*/
+
+.people{
+
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f2f2f2;
+}
+.people .point{
+		
+	width: 10px;
+	height: 10px;
+	background-color:#2ecc71; 
+	display: inline-block;
+	margin: auto;
+	border-radius: 100%;
+}
+.people .active{	border:2px solid #2ecc71;	background-color:#fff;}
+
+.people .point:hover{	border:2px solid #2ecc71;	background-color:#fff;cursor: pointer; }
+
+
+/*End ressume*/
+
+/*start protofoloi*/
+
+.protofolio{	padding-top: 30px;	padding-bottom: 30px;}
+
+.protofolio h2{	font-family: Tahoma;	margin-top: 50px;}
+
+.protofolio p {
+	
+	line-height: 1.8;
+	font-family: cursive;
+	color:#2ecc71 ;
+	margin-left: 100px;
+	margin-bottom: 50px;
+}
+
+.protofolio .ourwork{	overflow: hidden;	}
+
+.protofolio .ourwork > div {	float: left;	width: 33.333333%;	margin-bottom: 15px;}
+
+.protofolio .ourwork > div >img {
+	
+	width: 300px;
+	height: 300px;
+	box-shadow: 15px 15px 30px #888888;
+	border-radius: 100%;
+	border: 4px groove #fff;
+
+}
+
+/*end protofoloi*/
+
+/*Start Contact*/
+
+.Contact{	background-color:#252f31 ;	overflow: hidden;	}
+
+.Contact .info,.Contact .form {	float: left;	width: 50%;}
+
+.Contact .info > h2{	font-family: Tahoma;	color: #fff;}
+
+.Contact .info > p {
+
+	font-family: cursive;
+	color:#2ecc71 ;
+	color: #6a6e71;
+	padding-right: 20px;
+	margin-right: 30px;
+}
+
+.Contact .info > p:nth-child(2) {
+
+	line-height: 2;
+	font-family: cursive;
+	color:#2ecc71 ;
+	margin-bottom: 50px;
+	color: #6a6e71;
+}
+
+.Contact .info > h4{	margin-top: 50px;}
+
+.Contact .info > h4 >span{
+
+	font-family: cursive;
+	color:#2ecc71 ;
+	color: #6a6e71;
+	padding-left: 10px;
+	margin-left: 10px;
+
+}
+
+.Contact .form >input[type = "text"],textarea{
+
+	height: 35px;
+	display: block;
+	background-color: #4B5557;
+	width:100%;
+	color: #fff;
+	border:1.5px groove #fff;
+
+}
+
+.Contact .form > textarea{	height: 250px;}
+
+.Contact .form button{	
+	background-color: #2ecc71;
+	font-size: 20px;
+	font-family: cursive;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border:2px solid #fff;
+	color: #fff;
+	padding:5px 25px; 
+	border-radius: 20%;
+}
+.Contact .form button:hover{
+
+	background-color: #fff;
+	cursor: pointer;
+	color: #2ecc71;
+	border:2px solid #2ecc71;
+}
+
+.Contact .form h3{	color: #fff}
+
+/*end Contact me*/
+
+/*start footer*/
+
+.footer{
+
+	background-color: #191E22;
+	color: #6a6e71;
+	text-align: center;
+	padding:15px;
+	overflow: hidden;
+
+}
+
+.footer  h4{	margin-top: 0px;	margin-bottom: 10px;}
+
+.footer div{	display: inline-block;}
+
+.footer div>img{
+	text-align: center;
+	width:30px ;
+	height:30px ;
+	border-radius: 100%;
+	margin-left: 10px;
+}
+
+.footer div>img:hover{	cursor: pointer;	border:2px groove #eee;}
+/*end footer*/
